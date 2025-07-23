@@ -1,0 +1,17 @@
+[package]
+name = "rust_design_patterns"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rust学习者"]
+description = "GoF 23种设计模式的Rust实现"
+license = "MIT"
+keywords = ["design-patterns", "gof", "rust", "programming", "architecture"]
+categories = ["development-tools", "algorithms"]
+
+# 为了让备忘录模式正常工作，我们需要chrono库
+# 为了让企业应用架构模式正常工作，我们需要serde库
+[dependencies]
+chrono = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
